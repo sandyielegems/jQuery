@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Cinema</h1>
+
+
+    <fieldset>
+        <h2>Keuze Tickets:</h2>
+        <input type="radio" name="ticket" id="1" value="1">
+        <label for="1">Een ticket</label>
+        <br>
+
+        <input type="radio" name="ticket" id="2" value="2">
+        <label for="2">Twee tickets</label> <br>
+    </fieldset>
+
+    <fieldset>
+        <h2>Food & Drinks</h2>
+        <input type="checkbox" name="extras" id="popcorn" value="popcorn">
+        <label for="popcorn">Popcorn 🍿 (5 euro)</label> <br>
+
+        <input type="checkbox" name="extras" id="cola" value="cola">
+        <label for="cola">Cola 🥛 (2,5 euro)</label>
+    </fieldset>
+
+    <button id="pay">Betalen</button>
+
+    <div id="kassabon">
+        <table>
+            <tr>
+                <th>item</th>
+                <th>prijs</th>
+            </tr>
+
+            <tr class="tickets">
+                <td>ticket(s)</td>
+                <td class="result">t</td>
+            </tr>
+
+            <tr class="extras">
+                <td>a</td>
+                <td class="result">b</td>
+            </tr>
+
+            <tr class="total">
+                <td>Totaal: </td>
+                <td class="result"></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js'></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
